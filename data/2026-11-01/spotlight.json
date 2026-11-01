@@ -1,0 +1,415 @@
+{
+ "topic": "Health equity and algorithmic bias",
+ "terms": {
+  "synonyms": [
+   "health equity",
+   "health disparities",
+   "health inequities",
+   "algorithmic bias",
+   "algorithmic fairness",
+   "AI fairness",
+   "machine learning fairness",
+   "fair ML",
+   "bias in AI",
+   "model bias",
+   "racial bias",
+   "data bias",
+   "representation bias",
+   "sampling bias",
+   "measurement bias",
+   "label bias",
+   "dataset shift",
+   "underrepresented populations",
+   "minority health",
+   "social determinants of health",
+   "SDOH",
+   "race-based clinical algorithms",
+   "race correction",
+   "eGFR race coefficient",
+   "pulse oximetry bias",
+   "skin tone bias",
+   "subgroup performance",
+   "disparate impact",
+   "equalized odds",
+   "demographic parity",
+   "calibration across groups",
+   "bias mitigation",
+   "debiasing",
+   "responsible AI",
+   "trustworthy AI",
+   "ethical AI",
+   "algorithmic accountability",
+   "algorithmic audit",
+   "health justice",
+   "digital divide",
+   "STANDING Together",
+   "TRIPOD+AI",
+   "HHS Section 1557 nondiscrimination rule"
+  ],
+  "mesh_terms": [
+   "Health Equity",
+   "Healthcare Disparities",
+   "Health Status Disparities",
+   "Social Determinants of Health",
+   "Bias",
+   "Selection Bias",
+   "Racism",
+   "Systemic Racism",
+   "Minority Health",
+   "Ethnic and Racial Minorities",
+   "Vulnerable Populations",
+   "Socioeconomic Factors",
+   "Sex Factors",
+   "Algorithms",
+   "Artificial Intelligence",
+   "Machine Learning",
+   "Deep Learning",
+   "Large Language Models",
+   "Decision Support Systems, Clinical",
+   "Ethics, Medical",
+   "Social Justice"
+  ],
+  "pubmed_query": "(\"Health Equity\"[mh] OR \"Healthcare Disparities\"[mh] OR \"Health Status Disparities\"[mh] OR \"Racism\"[mh] OR \"Bias\"[mh] OR \"health equity\"[tiab] OR \"health disparit*\"[tiab] OR \"health inequit*\"[tiab] OR \"algorithmic bias\"[tiab] OR \"algorithmic fairness\"[tiab] OR \"algorithmic discrimination\"[tiab] OR fairness[tiab] OR \"racial bias\"[tiab] OR \"race-based\"[tiab] OR \"race correction\"[tiab] OR \"debiasing\"[tiab] OR \"bias mitigation\"[tiab] OR \"subgroup performance\"[tiab] OR \"underrepresented\"[tiab]) AND (\"Algorithms\"[mh] OR \"Artificial Intelligence\"[mh] OR \"Machine Learning\"[mh] OR algorithm*[tiab] OR \"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"prediction model*\"[tiab] OR \"clinical decision support\"[tiab] OR \"large language model*\"[tiab])",
+  "web_queries": [
+   "algorithmic bias healthcare AI 2026 study",
+   "large language model racial bias clinical decision making 2026",
+   "AI fairness audit medical imaging skin tone dermatology 2026",
+   "FDA AI medical device subgroup performance bias guidance 2026",
+   "HHS Section 1557 patient care decision support tools nondiscrimination enforcement",
+   "race-free clinical algorithms eGFR pulse oximetry update 2026",
+   "health equity AI governance framework hospitals 2026",
+   "bias mitigation machine learning electronic health records underrepresented populations"
+  ],
+  "subtopics": [
+   {
+    "name": "Race-based clinical algorithms",
+    "pubmed_clause": "(\"race-based\"[tiab] OR \"race correction\"[tiab] OR \"race coefficient\"[tiab] OR \"race-free\"[tiab] OR \"race-neutral\"[tiab] OR (eGFR[tiab] AND race[tiab]) OR \"VBAC calculator\"[tiab])"
+   },
+   {
+    "name": "Medical imaging & dermatology",
+    "pubmed_clause": "((\"Diagnostic Imaging\"[mh] OR radiolog*[tiab] OR dermatolog*[tiab] OR \"skin tone\"[tiab] OR \"Fitzpatrick\"[tiab] OR \"chest x-ray\"[tiab]) AND (bias[tiab] OR fairness[tiab] OR disparit*[tiab]))"
+   },
+   {
+    "name": "Device/sensor bias (oximetry)",
+    "pubmed_clause": "((\"Oximetry\"[mh] OR \"pulse oximet*\"[tiab] OR wearable*[tiab] OR \"Wearable Electronic Devices\"[mh]) AND (\"skin pigmentation\"[tiab] OR \"Skin Pigmentation\"[mh] OR racial[tiab] OR bias[tiab] OR disparit*[tiab]))"
+   },
+   {
+    "name": "LLM bias in clinical use",
+    "pubmed_clause": "((\"Large Language Models\"[mh] OR \"large language model*\"[tiab] OR LLM*[tiab] OR ChatGPT[tiab] OR GPT-4[tiab]) AND (bias[tiab] OR fairness[tiab] OR stereotyp*[tiab] OR disparit*[tiab]))"
+   },
+   {
+    "name": "EHR risk prediction fairness",
+    "pubmed_clause": "((\"Electronic Health Records\"[mh] OR \"electronic health record*\"[tiab] OR \"risk prediction\"[tiab] OR \"risk score*\"[tiab]) AND (fairness[tiab] OR \"algorithmic bias\"[tiab] OR \"label bias\"[tiab] OR \"subgroup\"[tiab]) AND (algorithm*[tiab] OR \"machine learning\"[tiab]))"
+   },
+   {
+    "name": "Bias mitigation methods",
+    "pubmed_clause": "(\"bias mitigation\"[tiab] OR debias*[tiab] OR \"fairness-aware\"[tiab] OR \"fairness constraint*\"[tiab] OR reweighting[tiab] OR \"equalized odds\"[tiab] OR \"demographic parity\"[tiab] OR \"adversarial debiasing\"[tiab])"
+   },
+   {
+    "name": "Dataset diversity & represent.",
+    "pubmed_clause": "((\"dataset diversity\"[tiab] OR \"underrepresent*\"[tiab] OR \"representation bias\"[tiab] OR \"data representativeness\"[tiab] OR \"demographic reporting\"[tiab] OR \"STANDING Together\"[tiab]) AND (\"Artificial Intelligence\"[mh] OR \"machine learning\"[tiab] OR dataset*[tiab]))"
+   },
+   {
+    "name": "Governance, audit & regulation",
+    "pubmed_clause": "((\"algorithmic audit*\"[tiab] OR \"algorithmic accountability\"[tiab] OR governance[tiab] OR regulat*[tiab] OR \"Section 1557\"[tiab] OR \"Government Regulation\"[mh]) AND (bias[tiab] OR equity[tiab] OR fairness[tiab]) AND (\"Artificial Intelligence\"[mh] OR algorithm*[tiab]))"
+   }
+  ]
+ },
+ "trend": {
+  "query": "(\"Health Equity\"[mh] OR \"Healthcare Disparities\"[mh] OR \"Health Status Disparities\"[mh] OR \"Racism\"[mh] OR \"Bias\"[mh] OR \"health equity\"[tiab] OR \"health disparit*\"[tiab] OR \"health inequit*\"[tiab] OR \"algorithmic bias\"[tiab] OR \"algorithmic fairness\"[tiab] OR \"algorithmic discrimination\"[tiab] OR fairness[tiab] OR \"racial bias\"[tiab] OR \"race-based\"[tiab] OR \"race correction\"[tiab] OR \"debiasing\"[tiab] OR \"bias mitigation\"[tiab] OR \"subgroup performance\"[tiab] OR \"underrepresented\"[tiab]) AND (\"Algorithms\"[mh] OR \"Artificial Intelligence\"[mh] OR \"Machine Learning\"[mh] OR algorithm*[tiab] OR \"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"prediction model*\"[tiab] OR \"clinical decision support\"[tiab] OR \"large language model*\"[tiab])",
+  "ai_clause": "(\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"large language model*\"[tiab] OR \"natural language processing\"[tiab] OR \"Artificial Intelligence\"[mh])",
+  "rows": [
+   {
+    "year": 2017,
+    "topic": 359,
+    "topic_ai": 62,
+    "ai_share_pct": 17.3
+   },
+   {
+    "year": 2018,
+    "topic": 430,
+    "topic_ai": 110,
+    "ai_share_pct": 25.6
+   },
+   {
+    "year": 2019,
+    "topic": 445,
+    "topic_ai": 162,
+    "ai_share_pct": 36.4
+   },
+   {
+    "year": 2020,
+    "topic": 529,
+    "topic_ai": 243,
+    "ai_share_pct": 45.9
+   },
+   {
+    "year": 2021,
+    "topic": 636,
+    "topic_ai": 374,
+    "ai_share_pct": 58.8
+   },
+   {
+    "year": 2022,
+    "topic": 722,
+    "topic_ai": 454,
+    "ai_share_pct": 62.9
+   },
+   {
+    "year": 2023,
+    "topic": 856,
+    "topic_ai": 578,
+    "ai_share_pct": 67.5
+   },
+   {
+    "year": 2024,
+    "topic": 1355,
+    "topic_ai": 1041,
+    "ai_share_pct": 76.8
+   },
+   {
+    "year": 2025,
+    "topic": 2605,
+    "topic_ai": 2161,
+    "ai_share_pct": 83.0
+   },
+   {
+    "year": 2026,
+    "topic": 3109,
+    "topic_ai": 2660,
+    "ai_share_pct": 85.6
+   }
+  ],
+  "partial_year": 2026
+ },
+ "gap_map": {
+  "years": "2022-2026",
+  "facets": [
+   "External validation",
+   "Prospective",
+   "RCT",
+   "Deployment / implementation",
+   "Pediatric",
+   "Low-resource / LMIC",
+   "Fairness / bias"
+  ],
+  "rows": [
+   {
+    "subtopic": "Race-based clinical algorithms",
+    "ai_papers": 35,
+    "counts": {
+     "External validation": 0,
+     "Prospective": 0,
+     "RCT": 1,
+     "Deployment / implementation": 6,
+     "Pediatric": 2,
+     "Low-resource / LMIC": 1,
+     "Fairness / bias": 25
+    },
+    "pct": {
+     "External validation": 0.0,
+     "Prospective": 0.0,
+     "RCT": 2.9,
+     "Deployment / implementation": 17.1,
+     "Pediatric": 5.7,
+     "Low-resource / LMIC": 2.9,
+     "Fairness / bias": 71.4
+    }
+   },
+   {
+    "subtopic": "Medical imaging & dermatology",
+    "ai_papers": 509,
+    "counts": {
+     "External validation": 61,
+     "Prospective": 49,
+     "RCT": 2,
+     "Deployment / implementation": 190,
+     "Pediatric": 23,
+     "Low-resource / LMIC": 27,
+     "Fairness / bias": 509
+    },
+    "pct": {
+     "External validation": 12.0,
+     "Prospective": 9.6,
+     "RCT": 0.4,
+     "Deployment / implementation": 37.3,
+     "Pediatric": 4.5,
+     "Low-resource / LMIC": 5.3,
+     "Fairness / bias": 100.0
+    }
+   },
+   {
+    "subtopic": "Device/sensor bias (oximetry)",
+    "ai_papers": 155,
+    "counts": {
+     "External validation": 21,
+     "Prospective": 15,
+     "RCT": 0,
+     "Deployment / implementation": 93,
+     "Pediatric": 8,
+     "Low-resource / LMIC": 15,
+     "Fairness / bias": 155
+    },
+    "pct": {
+     "External validation": 13.5,
+     "Prospective": 9.7,
+     "RCT": 0.0,
+     "Deployment / implementation": 60.0,
+     "Pediatric": 5.2,
+     "Low-resource / LMIC": 9.7,
+     "Fairness / bias": 100.0
+    }
+   },
+   {
+    "subtopic": "LLM bias in clinical use",
+    "ai_papers": 657,
+    "counts": {
+     "External validation": 35,
+     "Prospective": 34,
+     "RCT": 12,
+     "Deployment / implementation": 277,
+     "Pediatric": 26,
+     "Low-resource / LMIC": 22,
+     "Fairness / bias": 656
+    },
+    "pct": {
+     "External validation": 5.3,
+     "Prospective": 5.2,
+     "RCT": 1.8,
+     "Deployment / implementation": 42.2,
+     "Pediatric": 4.0,
+     "Low-resource / LMIC": 3.3,
+     "Fairness / bias": 99.8
+    }
+   },
+   {
+    "subtopic": "EHR risk prediction fairness",
+    "ai_papers": 350,
+    "counts": {
+     "External validation": 95,
+     "Prospective": 63,
+     "RCT": 0,
+     "Deployment / implementation": 204,
+     "Pediatric": 22,
+     "Low-resource / LMIC": 18,
+     "Fairness / bias": 346
+    },
+    "pct": {
+     "External validation": 27.1,
+     "Prospective": 18.0,
+     "RCT": 0.0,
+     "Deployment / implementation": 58.3,
+     "Pediatric": 6.3,
+     "Low-resource / LMIC": 5.1,
+     "Fairness / bias": 98.9
+    }
+   },
+   {
+    "subtopic": "Bias mitigation methods",
+    "ai_papers": 555,
+    "counts": {
+     "External validation": 41,
+     "Prospective": 21,
+     "RCT": 2,
+     "Deployment / implementation": 223,
+     "Pediatric": 15,
+     "Low-resource / LMIC": 18,
+     "Fairness / bias": 531
+    },
+    "pct": {
+     "External validation": 7.4,
+     "Prospective": 3.8,
+     "RCT": 0.4,
+     "Deployment / implementation": 40.2,
+     "Pediatric": 2.7,
+     "Low-resource / LMIC": 3.2,
+     "Fairness / bias": 95.7
+    }
+   },
+   {
+    "subtopic": "Dataset diversity & represent.",
+    "ai_papers": 917,
+    "counts": {
+     "External validation": 70,
+     "Prospective": 43,
+     "RCT": 5,
+     "Deployment / implementation": 236,
+     "Pediatric": 70,
+     "Low-resource / LMIC": 63,
+     "Fairness / bias": 326
+    },
+    "pct": {
+     "External validation": 7.6,
+     "Prospective": 4.7,
+     "RCT": 0.5,
+     "Deployment / implementation": 25.7,
+     "Pediatric": 7.6,
+     "Low-resource / LMIC": 6.9,
+     "Fairness / bias": 35.6
+    }
+   },
+   {
+    "subtopic": "Governance, audit & regulation",
+    "ai_papers": 939,
+    "counts": {
+     "External validation": 104,
+     "Prospective": 106,
+     "RCT": 2,
+     "Deployment / implementation": 591,
+     "Pediatric": 44,
+     "Low-resource / LMIC": 72,
+     "Fairness / bias": 939
+    },
+    "pct": {
+     "External validation": 11.1,
+     "Prospective": 11.3,
+     "RCT": 0.2,
+     "Deployment / implementation": 62.9,
+     "Pediatric": 4.7,
+     "Low-resource / LMIC": 7.7,
+     "Fairness / bias": 100.0
+    }
+   }
+  ],
+  "overall": {
+   "years": "2022-2026",
+   "total": 6332,
+   "counts": {
+    "External validation": 489,
+    "Prospective": 354,
+    "RCT": 35,
+    "Deployment / implementation": 2119,
+    "Pediatric": 381,
+    "Low-resource / LMIC": 392,
+    "Fairness / bias": 5012
+   }
+  }
+ },
+ "markdown": "### Key takeaways\n- Our gap map shows audits far outnumber outcome trials: 5,012 of 6,332 AI papers from 2022\u20132026 address fairness, but only 35 are RCTs.\n- LLM bias has now been shown on real ED records ([UTSW](https://www.utsouthwestern.edu/newsroom/articles/year-2026/oct-ai-enabled-triage-tools-human-biases.html)) and in a deployed scribe ([medRxiv](https://www.medrxiv.org/content/10.64898/2026.08.14.26360467v1.full)), not only in vignettes.\n- HHS's June vacatur dropped only gender-identity provisions ([NFP](https://www.nfp.com/insights/hhs-vacates-rule-prohibiting-gender-identity-discrimination/)). The 2024 rule's decision-tool duty still applies ([Crowell](https://www.crowell.com/en/insights/client-alerts/hhs-applies-discrimination-prohibitions-to-use-of-automated-and-non-automated-patient-care-decision-support-tools)).\n\n### What's new\n- **Oct 29** \u2014 Cedars-Sinai's Tiffani Bright: hospitals can't inspect vendor \"black box\" training data, and overall accuracy can hide subgroup failures ([AHCJ](https://healthjournalism.org/blog/2026/10/black-box-medical-ai-can-deepen-health-disparities-researcher-says)).\n- **Oct 20** \u2014 Three open LLMs triaged Stanford and BIDMC ED records. Stigmatizing wording wrongly downgraded nearly 10% of patients in some instances ([UTSW](https://www.utsouthwestern.edu/newsroom/articles/year-2026/oct-ai-enabled-triage-tools-human-biases.html)).\n- **Sep 21** \u2014 WHO flags bias as a risk that current ethics review may miss and calls for local LMIC research leadership ([WHO](https://www.who.int/news/item/21-09-2026-new-who-report-calls-for-stronger-ethics-oversight-of-ai-related-health-research)).\n- **Aug 17** \u2014 Across 54,160 safety-net visits, Spanish, Portuguese and Haitian Creole encounters had lower odds (OR 0.75\u20130.79) of mostly unedited Abridge notes ([medRxiv](https://www.medrxiv.org/content/10.64898/2026.08.14.26360467v1.full)).\n\n### Novel gaps\n1. **Trials of debiased models.** Evidence: 2 RCTs among 555 mitigation papers; NYC H+H threshold fix was retrospective ([npj](https://www.nature.com/articles/s41746-025-01732-w)). Study: stepped-wedge RCT, safety-net EHRs; endpoint: racial gap in missed deterioration. Funder: AHRQ/PCORI.\n2. **Safety of LLM tools by patient language.** Evidence: 5.2% of 657 LLM-bias papers prospective; the scribe study didn't assess accuracy or safety ([medRxiv](https://www.medrxiv.org/content/10.64898/2026.08.14.26360467v1.full)). Study: prospective multisite note review in interpreter visits; endpoint: harmful errors. Funder: AHRQ.\n3. **Post-market subgroup checks of cleared AI devices.** Evidence: FDA summary reporting didn't improve with clearance year (OR 1.02, n=519) ([arXiv](https://arxiv.org/abs/2608.12360)). Study: multisite registry comparing device output with ground truth by race, sex and age. Funder: FDA CDRH.\n\n*Dropped because recent work covers them: race-free eGFR outcomes ([JAMA IM via Healio](https://www.healio.com/news/nephrology/20260429/waittime-policy-tied-to-increased-kidney-transplant-rates-for-black-candidates)) and neonatal oximetry bias (NeoPODS, prospective, [Masimo release](https://www.masimo.com/media/masimo-set-r-pulse-oximetry-performed-accurately-on-hospitalized-newborns-of-all-skin-tones-in-largest-ever-prospective-real-world-study)).*\n\n### Outlook\nThe research is shifting from vignette audits to tools already in use, and WHO now asks funders, journals and regulators to deal with systemic AI risks that single-project ethics review can't catch ([WHO](https://www.who.int/news/item/21-09-2026-new-who-report-calls-for-stronger-ethics-oversight-of-ai-related-health-research)).",
+ "chart_spec": {
+  "title": "Scribe notes \u226580% unedited, by language",
+  "type": "bar",
+  "x_label": "Encounter language",
+  "y_label": "% of encounters with PER \u226580%",
+  "x": [
+   "English",
+   "Spanish",
+   "Portuguese",
+   "Haitian Creole",
+   "Other"
+  ],
+  "series": [
+   {
+    "name": "Unadjusted rate (%)",
+    "values": [
+     57.6,
+     51.1,
+     51.0,
+     50.5,
+     48.7
+    ]
+   }
+  ],
+  "source": "Cambridge Health Alliance preprint, medRxiv: https://www.medrxiv.org/content/10.64898/2026.08.14.26360467v1.full"
+ }
+}

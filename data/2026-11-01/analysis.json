@@ -1,0 +1,142 @@
+{
+ "headline": "Beyond AUROC: screening alerts, local updates and deployed tools under scrutiny",
+ "subtitle": "An explainable multimodal model, EHR screening preprints, and LLMs graded against guidelines",
+ "tldr": [
+  "Strong discrimination can hide real costs. TRACER's alert burden varied by disease and site, and local retinal-AI updates sharply increased flags. Both are preprints.",
+  "LLM tools built on guidelines still fail hard cases. Ask Eolas gave some potentially unsafe answers, and no EM-BENCH configuration fully matched ACEP guidelines.",
+  "A quiet week for grants and devices: two VA awards target Alzheimer's and TBI biomarkers, and FDA cleared the twiist Loop Algorithm by 510(k)."
+ ],
+ "paper_themes": [
+  {
+   "theme": "Validation beyond headline metrics",
+   "summary": "Studies test screening thresholds, local updates, calibration under shift and abstention. Several show that good AUROC can hide alert burden or miscalibration.",
+   "ids": [
+    "arxiv:2610.40536v1",
+    "doi:10.64898/2026.10.23.26366103",
+    "arxiv:2610.39065v1",
+    "doi:10.64898/2026.10.27.26366616"
+   ]
+  },
+  {
+   "theme": "LLMs measured against guidelines and clinicians",
+   "summary": "Benchmarks and head-to-head comparisons are multiplying. Guideline-structured methods help, but complex cases expose unsafe outputs, and many evaluations rely on synthetic cases or simulated patients.",
+   "ids": [
+    "doi:10.64898/2026.10.27.26366650",
+    "doi:10.64898/2026.10.22.26366212",
+    "doi:10.64898/2026.10.23.26366291",
+    "arxiv:2610.40476v1",
+    "arxiv:2610.40327v1",
+    "doi:10.64898/2026.10.23.26366376"
+   ]
+  },
+  {
+   "theme": "Explainable and modality-specific foundation models",
+   "summary": "Explainability comes from pixel grounding and readable morphology. Models are pretrained for micro-ultrasound and PET. An independent fMRI audit found released models hard to reuse.",
+   "ids": [
+    "pmid:42957777",
+    "pmid:42956750",
+    "pmid:42926578",
+    "arxiv:2610.40018v1",
+    "pmid:42953713",
+    "doi:10.64898/2026.10.22.26366227"
+   ]
+  }
+ ],
+ "top_papers": [
+  {
+   "id": "pmid:42957777",
+   "note": "Peer-reviewed vision-language model covering 10 imaging modalities, with pixel-level grounding, externally tested on 17 additional datasets."
+  },
+  {
+   "id": "arxiv:2610.40536v1",
+   "note": "EHR foundation model tested at 95% specificity in held-out health systems; false-alert burden varied by site. Preprint."
+  },
+  {
+   "id": "doi:10.64898/2026.10.23.26366103",
+   "note": "Local updates improved Brier loss but multiplied flags; patient-level net benefit sometimes fell. Preprint."
+  },
+  {
+   "id": "doi:10.64898/2026.10.22.26366212",
+   "note": "Antimicrobial advice tool already offered in UK hospitals gave some potentially unsafe answers in complex scenarios. Preprint."
+  },
+  {
+   "id": "arxiv:2610.39339v1",
+   "note": "AI Overviews appeared for 96.4% of health queries, favoured commercial publishers and grounded statements poorly."
+  }
+ ],
+ "grants_summary": "Few medical-AI awards this week. Two VA projects target Alzheimer's detection from routine tests and TBI biomarkers. NSF funding is mostly methods work, including tabular transfer learning for health data.",
+ "top_grants": [
+  {
+   "id": "nih:5IK2CX002625-02",
+   "note": "Applies ML to routine neuropsych tests and clock drawing as a scalable alternative to amyloid PET in Veterans."
+  },
+  {
+   "id": "nih:5I01BX005871-04",
+   "note": "Tests whether retinal and blood biomarkers can track chronic brain damage after blast and impact TBI."
+  },
+  {
+   "id": "nsf:2644348",
+   "note": "Small award for transfer learning across mismatched tabular datasets, a common barrier in EHR-based modelling."
+  }
+ ],
+ "products_summary": "A light week for products: one 510(k) for a loop algorithm, Flagship's launch of an AI drug-discovery company, and federal regulators moving as states test AI in clinical settings.",
+ "top_products": [
+  {
+   "id": "510k:K262576",
+   "note": "This week's only 510(k): the twiist Loop Algorithm, product code QJI, reviewed by the Clinical Chemistry panel."
+  },
+  {
+   "id": "rss:https://www.fiercebiotech.com/42d252a7-88e2-4632-83ed-cd7b5bb017ff",
+   "note": "Flagship merges three platforms into Etcelera, which aims to predict how candidate medicines will act in patients."
+  },
+  {
+   "id": "rss:https://www.statnews.com/?p=1541277",
+   "note": "FDA and CMS are working to head off a state-federal clash over regulating AI tested in clinical settings."
+  }
+ ],
+ "research_gaps": [
+  {
+   "gap": "Local model updates lack patient-level net-benefit and alert-burden checks before rollout",
+   "evidence": "Retinal updates improved Brier loss everywhere yet raised mBRSET flags to 809\u2013951 per 1,000. TRACER alert burden varied by site. No tabular model withstood event-rate shift.",
+   "ids": [
+    "doi:10.64898/2026.10.23.26366103",
+    "arxiv:2610.40536v1",
+    "arxiv:2610.39065v1"
+   ],
+   "suggested_study": "Multisite update protocol with preset net-benefit and flags-per-detection thresholds, comparing recalibration options before any locally updated screening model goes live.",
+   "recurring": false
+  },
+  {
+   "gap": "Clinical LLM tools are validated on LLM-written cases, scored by LLM judges",
+   "evidence": "The NIHSS benchmark used LLM-written transcripts and answer keys. Ask Eolas was tested on generated queries with an LLM judge. The sepsis comparison used six vignettes.",
+   "ids": [
+    "doi:10.64898/2026.10.23.26366376",
+    "doi:10.64898/2026.10.22.26366212",
+    "doi:10.64898/2026.10.23.26366291"
+   ],
+   "suggested_study": "Score NIHSS from recorded real code-stroke exams against certified examiners; audit Ask Eolas on logged hospital queries with clinician adjudication.",
+   "recurring": true
+  },
+  {
+   "gap": "Released medical foundation models are hard for independent researchers to reuse",
+   "evidence": "BrainLM and BrainHarmonix both needed substantial code changes to run on Prevent-AD. PedDx shows an external site can independently run a full workflow.",
+   "ids": [
+    "doi:10.64898/2026.10.22.26366227",
+    "doi:10.64898/2026.10.27.26366616"
+   ],
+   "suggested_study": "Independent reproduction audits of published imaging foundation models on new clinical cohorts, reporting setup effort and gains over simple baselines.",
+   "recurring": false
+  }
+ ],
+ "social": {
+  "linkedin_post": "BioMed AI Watch, Oct 25 \u2013 Nov 1: this week's AI was judged on more than AUROC.\n\n\u2022 TRACER, an EHR foundation model (arXiv preprint), kept its discrimination in health systems held out from development. At 95% specificity, its alert burden still varied by disease and site.\n\u2022 Local updates to diabetic retinopathy AI improved probability scores but sharply raised patient flags, and net benefit sometimes fell (medRxiv preprint).\n\u2022 Ask Eolas, an antimicrobial advice tool available in UK hospitals, handled simple queries well but gave some potentially unsafe answers in complex cases (preprint).\n\u2022 In Nature Medicine, EVLF-FM pairs diagnosis across 10 imaging modalities with pixel-level visual grounding.\n\nThe gap we flag: before a locally updated model goes live, it should be checked for patient-level net benefit and alert burden, not just calibration.\n\n#MedicalAI #DigitalHealth",
+  "x_thread": [
+   "BioMed AI Watch, Oct 25 \u2013 Nov 1: this week's theme is that good AUROC isn't the whole story. \ud83e\uddf5",
+   "TRACER (arXiv preprint): an EHR foundation model kept its discrimination in external health systems. At 95% specificity, its false-alert burden still varied by disease and site.",
+   "Diabetic retinopathy AI (medRxiv preprint): local updates improved Brier loss in every comparison, but flags in one cohort rose to 809\u2013951 per 1,000 patients.",
+   "LLMs and guidelines: no EM-BENCH configuration was fully concordant with ACEP guidelines, and Ask Eolas gave some potentially unsafe answers in complex antimicrobial cases. Both are preprints.",
+   "Many LLM evaluations still rely on LLM-written cases and LLM judges. Testing on real encounters is the missing step."
+  ],
+  "bluesky_post": "Medical AI this week: an EHR foundation model judged at 95% specificity across health systems, local retinal-AI updates that sharply raised flags, and an antimicrobial advice tool that struggled with complex cases. Mostly preprints, so read accordingly."
+ }
+}
