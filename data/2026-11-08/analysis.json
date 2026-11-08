@@ -1,0 +1,136 @@
+{
+ "headline": "Audits catch leaky benchmarks, inflated AUCs and age gaps in ECG AI",
+ "subtitle": "A week of meta-research shows reported performance often outruns what models deliver",
+ "tldr": [
+  "Preprint audits found AUCs clustering at round thresholds, patient leakage in MIMIC-CXR benchmarks, and AQ-10 label circularity inflating autism-screening accuracy.",
+  "Four ECG foundation models, probed on 5.4 million ECGs, performed worse in older adults. The preprint traces the gap to the data, not the models.",
+  "In a 368-person phase 3 RCT, AI diabetes-prevention coaching drew faster, steadier engagement, but participants rated human coaching higher."
+ ],
+ "paper_themes": [
+  {
+   "theme": "Evaluation integrity under audit",
+   "summary": "Re-audits show leakage, circular labels and threshold-chasing inflate reported performance. Externally validated IVF models pooled lower, though not significantly, and neurosurgery AUCs were extremely heterogeneous.",
+   "ids": [
+    "doi:10.64898/2026.11.02.26367135",
+    "arxiv:2611.07950v1",
+    "doi:10.64898/2026.11.01.26367003",
+    "arxiv:2611.07124v1",
+    "pmid:42993737"
+   ]
+  },
+  {
+   "theme": "Moving models across sites and populations",
+   "summary": "ECG foundation models lost accuracy with age, and uncertainty missed post-transfer performance loss. An AD MRI classifier trained on Western data held up in a Chinese cohort.",
+   "ids": [
+    "doi:10.64898/2026.10.30.26366943",
+    "doi:10.64898/2026.11.03.26367064",
+    "pmid:42985795"
+   ]
+  },
+  {
+   "theme": "Testing AI with people and workflows",
+   "summary": "An RCT found AI coaching traded satisfaction for engagement. AI cut breast-biopsy review time 43.5% in a retrospective study. Teen-chatbot safety failures persisted despite teen-aware prompting.",
+   "ids": [
+    "pmid:42982853",
+    "pmid:42999375",
+    "arxiv:2611.07218v1"
+   ]
+  }
+ ],
+ "top_papers": [
+  {
+   "id": "pmid:42982853",
+   "note": "Rare phase 3 RCT of patient-facing AI: faster uptake and engagement, but lower satisfaction than human coaching."
+  },
+  {
+   "id": "doi:10.64898/2026.10.30.26366943",
+   "note": "Preprint covering 13 cohorts: age, not sex or race, drives the largest worst-group gap across ECG foundation models."
+  },
+  {
+   "id": "doi:10.64898/2026.11.02.26367135",
+   "note": "Preprint covering 2,001 Q1-journal articles: metrics cluster at round numbers, and about one in eight ROC curves mismatch the reported AUC."
+  },
+  {
+   "id": "arxiv:2611.07950v1",
+   "note": "Patient-separated evaluation on MIMIC-CXR erased apparent gains; a label lookup table nearly matched the best model."
+  },
+  {
+   "id": "doi:10.64898/2026.11.03.26367064",
+   "note": "Preprint: after transfer from MIMIC-IV to eICU, uncertainty helped defer false alarms but missed the performance drop and most deaths."
+  }
+ ],
+ "grants_summary": "A thin week for AI funding. Three VA awards apply random forests, reinforcement learning and personalized risk to fatty liver disease (NAFLD), CKD mineral-bone disorder and lung screening. NSF awards are general methods work.",
+ "top_grants": [
+  {
+   "id": "nih:1I01RD000507-01A2",
+   "note": "Adds dynamic random-forest risk models to a working VA NAFLD dashboard to cut unnecessary referrals."
+  },
+  {
+   "id": "nih:5I01CX001614-08",
+   "note": "Combines a validated systems-biology model with reinforcement learning to personalize CKD mineral-bone disorder treatment for veterans."
+  },
+  {
+   "id": "nih:5I01CX002686-03",
+   "note": "Targets veterans missed by USPSTF criteria, including those with military exposures; pairs with this week's Sybil safety-net preprint."
+  }
+ ],
+ "products_summary": "Two cardiovascular software 510(k) clearances, with no performance details in the records. Industry news paired Claude-assisted CAR-T engineering and an AI clinical-data funding round with STAT skepticism after heart-drug failures.",
+ "top_products": [
+  {
+   "id": "510k:K260640",
+   "note": "Cardiovascular software cleared under code DPS; no subgroup data in the record, which matters given this week's ECG age findings."
+  },
+  {
+   "id": "rss:https://www.fiercebiotech.com/f2e20eea-0138-4b35-be28-3cdd3236049e",
+   "note": "Generate Biomedicines says it used Anthropic's Claude to shrink CAR-T cell engines; a company claim, not published data."
+  },
+  {
+   "id": "rss:https://www.statnews.com/?p=1545018",
+   "note": "STAT argues recent heart-drug failures should temper claims that AI speeds up drug research."
+  }
+ ],
+ "research_gaps": [
+  {
+   "gap": "Unknown how well deployed ECG AI performs in adults aged 75+",
+   "evidence": "Preprint: 30-day MACE AUROC was 0.64-0.71 at age 75+ versus 0.81-0.90 under 40. This week's cardiovascular 510(k) records report no age-group results.",
+   "ids": [
+    "doi:10.64898/2026.10.30.26366943",
+    "510k:K260640",
+    "510k:K252736"
+   ],
+   "suggested_study": "Age-stratified external validation of cleared ECG algorithms in older-adult cohorts, with post-market subgroup reporting and recalibration targets.",
+   "recurring": false
+  },
+  {
+   "gap": "No real-time warning, before outcomes are known, of AI performance loss after transfer",
+   "evidence": "After transfer to eICU, AUROC fell to 0.76-0.77. No uncertainty measure flagged the loss, and missed deaths carried low uncertainty.",
+   "ids": [
+    "doi:10.64898/2026.11.03.26367064"
+   ],
+   "suggested_study": "Prospective multi-site study comparing uncertainty, input-drift and rapid outcome-label audits for detecting degradation of transferred mortality models.",
+   "recurring": false
+  },
+  {
+   "gap": "Public clinical benchmarks lack patient-level split and label-provenance audits",
+   "evidence": "Record-level MIMIC-CXR splits and AQ-10 labels built from the input items inflated accuracy. Q1-journal AUCs cluster at round thresholds.",
+   "ids": [
+    "arxiv:2611.07950v1",
+    "doi:10.64898/2026.11.01.26367003",
+    "doi:10.64898/2026.11.02.26367135"
+   ],
+   "suggested_study": "Re-audit the most-cited public clinical datasets for leakage and circular labels, then publish corrected splits and re-scored leaderboards.",
+   "recurring": false
+  }
+ ],
+ "social": {
+  "linkedin_post": "This week's BioMed AI Watch is about whether reported performance holds up.\n\n\u2022 A meta-research preprint covering 2,001 prediction-model articles in top-quartile journals found AUC, sensitivity and specificity clustering at round numbers. About 1 in 8 ROC curves did not match the reported AUC.\n\u2022 An audit of a MIMIC-CXR benchmark found that its apparent gains disappeared once patients were kept separate between training and test sets.\n\u2022 A preprint testing four ECG foundation models on 5.4 million ECGs found performance fell with age. It traces the gap to the data, not the models.\n\u2022 After moving from one hospital system's data to another's, uncertainty scores did not warn of a mortality model's performance drop (preprint).\n\nOn the trial side, a 368-person phase 3 RCT found an AI diabetes-prevention program got people started sooner and kept engagement steadier. Participants still rated human coaching higher.\n\nMost findings above are preprints and not yet peer-reviewed. The common lesson is that patient-level splits, subgroup reporting and post-deployment monitoring belong in the evaluation itself.\n\n#MedicalAI #ClinicalResearch",
+  "x_thread": [
+   "This week in medical AI: several audits suggest reported model performance often outruns reality. A short thread \ud83e\uddf5",
+   "A preprint covering 2,001 prediction-model papers found AUCs, sensitivities and specificities clustering at round numbers. About 1 in 8 ROC curves didn't match the reported AUC.",
+   "On MIMIC-CXR, a simple label lookup table nearly matched the best model under record-level splits. With patients kept separate, the apparent gains vanished.",
+   "Four ECG foundation models, probed on 5.4M ECGs, performed worse in older adults: 30-day MACE AUROC 0.64-0.71 at age 75+ vs 0.81-0.90 under 40. The preprint says the gap comes from the data, not the models.",
+   "A trial result: in a 368-person phase 3 RCT, AI diabetes-prevention coaching boosted engagement, but participants preferred human coaches. Most audits above are unreviewed preprints."
+  ],
+  "bluesky_post": "Medical AI this week: preprint audits found inflated AUCs, patient leakage in a MIMIC-CXR benchmark, and an age gap across four ECG foundation models. A 368-person RCT found AI diabetes coaching boosted engagement, but people preferred human coaches."
+ }
+}

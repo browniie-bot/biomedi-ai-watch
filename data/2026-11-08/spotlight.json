@@ -1,0 +1,376 @@
+{
+ "topic": "Medical large language models and agents",
+ "terms": {
+  "synonyms": [
+   "large language models",
+   "LLM",
+   "LLMs",
+   "medical LLM",
+   "clinical LLM",
+   "foundation models",
+   "medical foundation models",
+   "generative AI",
+   "GenAI",
+   "generative pre-trained transformer",
+   "GPT-4",
+   "ChatGPT",
+   "Med-PaLM",
+   "Med-Gemini",
+   "Claude",
+   "Llama",
+   "multimodal large language models",
+   "MLLM",
+   "vision-language models",
+   "VLM",
+   "AI agents",
+   "agentic AI",
+   "LLM agents",
+   "autonomous agents",
+   "multi-agent systems",
+   "retrieval-augmented generation",
+   "RAG",
+   "prompt engineering",
+   "chain-of-thought",
+   "instruction tuning",
+   "fine-tuning",
+   "conversational AI",
+   "chatbots",
+   "AI scribes",
+   "ambient clinical documentation",
+   "natural language processing",
+   "NLP",
+   "transformer models",
+   "small language models"
+  ],
+  "mesh_terms": [
+   "Large Language Models",
+   "Generative Artificial Intelligence",
+   "Natural Language Processing",
+   "Artificial Intelligence",
+   "Deep Learning",
+   "Neural Networks, Computer",
+   "Machine Learning",
+   "Decision Support Systems, Clinical",
+   "Documentation",
+   "Electronic Health Records",
+   "Communication"
+  ],
+  "pubmed_query": "(\"Large Language Models\"[mh] OR \"Generative Artificial Intelligence\"[mh] OR \"large language model*\"[tiab] OR \"LLM\"[tiab] OR \"LLMs\"[tiab] OR \"ChatGPT\"[tiab] OR \"GPT-4*\"[tiab] OR \"GPT-3*\"[tiab] OR \"generative AI\"[tiab] OR \"generative artificial intelligence\"[tiab] OR \"foundation model*\"[tiab] OR \"Med-PaLM\"[tiab] OR \"Gemini\"[tiab] OR \"Llama\"[tiab] OR \"vision-language model*\"[tiab] OR \"multimodal large language model*\"[tiab] OR \"retrieval-augmented generation\"[tiab] OR \"AI agent*\"[tiab] OR \"agentic\"[tiab] OR \"LLM agent*\"[tiab] OR \"multi-agent\"[tiab]) AND (\"Medicine\"[mh] OR \"Delivery of Health Care\"[mh] OR \"Clinical Medicine\"[mh] OR medical[tiab] OR clinical[tiab] OR clinician*[tiab] OR patient*[tiab] OR health*[tiab] OR physician*[tiab])",
+  "web_queries": [
+   "medical large language model benchmark results 2026",
+   "agentic AI clinical workflow deployment hospital 2026",
+   "LLM clinical decision support randomized controlled trial 2026",
+   "ambient AI scribe health system evaluation 2026",
+   "FDA guidance generative AI medical devices large language models 2026",
+   "multimodal medical foundation model radiology pathology release 2026",
+   "multi-agent LLM diagnosis study Nature Medicine NEJM AI 2026",
+   "LLM hallucination safety evaluation clinical use 2026"
+  ],
+  "subtopics": [
+   {
+    "name": "Clinical decision support",
+    "pubmed_clause": "(\"Decision Support Systems, Clinical\"[mh] OR \"clinical decision support\"[tiab] OR \"differential diagnosis\"[tiab] OR \"diagnostic reasoning\"[tiab] OR \"treatment recommendation*\"[tiab])"
+   },
+   {
+    "name": "Clinical documentation/scribes",
+    "pubmed_clause": "(\"Documentation\"[mh] OR \"ambient\"[tiab] OR \"AI scribe*\"[tiab] OR \"digital scribe*\"[tiab] OR \"clinical documentation\"[tiab] OR \"discharge summar*\"[tiab] OR \"note generation\"[tiab] OR \"summarization\"[tiab])"
+   },
+   {
+    "name": "Patient communication/chatbots",
+    "pubmed_clause": "(\"Communication\"[mh] OR \"Patient Education as Topic\"[mh] OR chatbot*[tiab] OR \"patient message*\"[tiab] OR \"patient question*\"[tiab] OR \"patient education\"[tiab] OR \"health literacy\"[tiab] OR \"conversational agent*\"[tiab])"
+   },
+   {
+    "name": "Medical exams & benchmarks",
+    "pubmed_clause": "(\"Educational Measurement\"[mh] OR \"licensing exam*\"[tiab] OR \"USMLE\"[tiab] OR \"board exam*\"[tiab] OR benchmark*[tiab] OR \"MedQA\"[tiab] OR \"question answering\"[tiab])"
+   },
+   {
+    "name": "Multimodal imaging LLMs",
+    "pubmed_clause": "(\"Diagnostic Imaging\"[mh] OR \"Radiology\"[mh] OR \"Pathology\"[mh] OR \"vision-language\"[tiab] OR multimodal[tiab] OR \"radiology report*\"[tiab] OR \"report generation\"[tiab])"
+   },
+   {
+    "name": "Agents & tool use",
+    "pubmed_clause": "(\"AI agent*\"[tiab] OR agentic[tiab] OR \"LLM agent*\"[tiab] OR \"multi-agent\"[tiab] OR \"tool use\"[tiab] OR \"autonomous agent*\"[tiab] OR \"workflow automation\"[tiab])"
+   },
+   {
+    "name": "RAG & EHR information extraction",
+    "pubmed_clause": "(\"Electronic Health Records\"[mh] OR \"Information Storage and Retrieval\"[mh] OR \"retrieval-augmented\"[tiab] OR \"information extraction\"[tiab] OR \"clinical notes\"[tiab] OR \"medical coding\"[tiab] OR phenotyping[tiab])"
+   },
+   {
+    "name": "Safety, bias & hallucination",
+    "pubmed_clause": "(\"Patient Safety\"[mh] OR \"Bias\"[mh] OR hallucinat*[tiab] OR confabulat*[tiab] OR \"algorithmic bias\"[tiab] OR fairness[tiab] OR \"red teaming\"[tiab] OR \"misinformation\"[tiab])"
+   }
+  ]
+ },
+ "trend": {
+  "query": "(\"Large Language Models\"[mh] OR \"Generative Artificial Intelligence\"[mh] OR \"large language model*\"[tiab] OR \"LLM\"[tiab] OR \"LLMs\"[tiab] OR \"ChatGPT\"[tiab] OR \"GPT-4*\"[tiab] OR \"GPT-3*\"[tiab] OR \"generative AI\"[tiab] OR \"generative artificial intelligence\"[tiab] OR \"foundation model*\"[tiab] OR \"Med-PaLM\"[tiab] OR \"Gemini\"[tiab] OR \"Llama\"[tiab] OR \"vision-language model*\"[tiab] OR \"multimodal large language model*\"[tiab] OR \"retrieval-augmented generation\"[tiab] OR \"AI agent*\"[tiab] OR \"agentic\"[tiab] OR \"LLM agent*\"[tiab] OR \"multi-agent\"[tiab]) AND (\"Medicine\"[mh] OR \"Delivery of Health Care\"[mh] OR \"Clinical Medicine\"[mh] OR medical[tiab] OR clinical[tiab] OR clinician*[tiab] OR patient*[tiab] OR health*[tiab] OR physician*[tiab])",
+  "ai_clause": "(\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"large language model*\"[tiab] OR \"natural language processing\"[tiab] OR \"Artificial Intelligence\"[mh])",
+  "rows": [
+   {
+    "year": 2017,
+    "topic": 140,
+    "topic_ai": 1,
+    "ai_share_pct": 0.7
+   },
+   {
+    "year": 2018,
+    "topic": 159,
+    "topic_ai": 5,
+    "ai_share_pct": 3.1
+   },
+   {
+    "year": 2019,
+    "topic": 170,
+    "topic_ai": 10,
+    "ai_share_pct": 5.9
+   },
+   {
+    "year": 2020,
+    "topic": 194,
+    "topic_ai": 7,
+    "ai_share_pct": 3.6
+   },
+   {
+    "year": 2021,
+    "topic": 232,
+    "topic_ai": 13,
+    "ai_share_pct": 5.6
+   },
+   {
+    "year": 2022,
+    "topic": 236,
+    "topic_ai": 29,
+    "ai_share_pct": 12.3
+   },
+   {
+    "year": 2023,
+    "topic": 1988,
+    "topic_ai": 1457,
+    "ai_share_pct": 73.3
+   },
+   {
+    "year": 2024,
+    "topic": 4764,
+    "topic_ai": 4098,
+    "ai_share_pct": 86.0
+   },
+   {
+    "year": 2025,
+    "topic": 8587,
+    "topic_ai": 7806,
+    "ai_share_pct": 90.9
+   },
+   {
+    "year": 2026,
+    "topic": 10992,
+    "topic_ai": 9885,
+    "ai_share_pct": 89.9
+   }
+  ],
+  "partial_year": 2026
+ },
+ "gap_map": {
+  "years": "2022-2026",
+  "facets": [
+   "External validation",
+   "Prospective",
+   "RCT",
+   "Deployment / implementation",
+   "Pediatric",
+   "Low-resource / LMIC",
+   "Fairness / bias"
+  ],
+  "rows": [
+   {
+    "subtopic": "Clinical decision support",
+    "ai_papers": 2144,
+    "counts": {
+     "External validation": 158,
+     "Prospective": 268,
+     "RCT": 30,
+     "Deployment / implementation": 783,
+     "Pediatric": 117,
+     "Low-resource / LMIC": 51,
+     "Fairness / bias": 325
+    },
+    "pct": {
+     "External validation": 7.4,
+     "Prospective": 12.5,
+     "RCT": 1.4,
+     "Deployment / implementation": 36.5,
+     "Pediatric": 5.5,
+     "Low-resource / LMIC": 2.4,
+     "Fairness / bias": 15.2
+    }
+   },
+   {
+    "subtopic": "Clinical documentation/scribes",
+    "ai_papers": 1118,
+    "counts": {
+     "External validation": 59,
+     "Prospective": 63,
+     "RCT": 17,
+     "Deployment / implementation": 391,
+     "Pediatric": 38,
+     "Low-resource / LMIC": 19,
+     "Fairness / bias": 161
+    },
+    "pct": {
+     "External validation": 5.3,
+     "Prospective": 5.6,
+     "RCT": 1.5,
+     "Deployment / implementation": 35.0,
+     "Pediatric": 3.4,
+     "Low-resource / LMIC": 1.7,
+     "Fairness / bias": 14.4
+    }
+   },
+   {
+    "subtopic": "Patient communication/chatbots",
+    "ai_papers": 5746,
+    "counts": {
+     "External validation": 98,
+     "Prospective": 228,
+     "RCT": 138,
+     "Deployment / implementation": 1090,
+     "Pediatric": 384,
+     "Low-resource / LMIC": 97,
+     "Fairness / bias": 629
+    },
+    "pct": {
+     "External validation": 1.7,
+     "Prospective": 4.0,
+     "RCT": 2.4,
+     "Deployment / implementation": 19.0,
+     "Pediatric": 6.7,
+     "Low-resource / LMIC": 1.7,
+     "Fairness / bias": 10.9
+    }
+   },
+   {
+    "subtopic": "Medical exams & benchmarks",
+    "ai_papers": 3241,
+    "counts": {
+     "External validation": 154,
+     "Prospective": 200,
+     "RCT": 71,
+     "Deployment / implementation": 870,
+     "Pediatric": 145,
+     "Low-resource / LMIC": 54,
+     "Fairness / bias": 318
+    },
+    "pct": {
+     "External validation": 4.8,
+     "Prospective": 6.2,
+     "RCT": 2.2,
+     "Deployment / implementation": 26.8,
+     "Pediatric": 4.5,
+     "Low-resource / LMIC": 1.7,
+     "Fairness / bias": 9.8
+    }
+   },
+   {
+    "subtopic": "Multimodal imaging LLMs",
+    "ai_papers": 3685,
+    "counts": {
+     "External validation": 375,
+     "Prospective": 327,
+     "RCT": 21,
+     "Deployment / implementation": 1011,
+     "Pediatric": 150,
+     "Low-resource / LMIC": 87,
+     "Fairness / bias": 419
+    },
+    "pct": {
+     "External validation": 10.2,
+     "Prospective": 8.9,
+     "RCT": 0.6,
+     "Deployment / implementation": 27.4,
+     "Pediatric": 4.1,
+     "Low-resource / LMIC": 2.4,
+     "Fairness / bias": 11.4
+    }
+   },
+   {
+    "subtopic": "Agents & tool use",
+    "ai_papers": 851,
+    "counts": {
+     "External validation": 58,
+     "Prospective": 81,
+     "RCT": 7,
+     "Deployment / implementation": 312,
+     "Pediatric": 23,
+     "Low-resource / LMIC": 19,
+     "Fairness / bias": 121
+    },
+    "pct": {
+     "External validation": 6.8,
+     "Prospective": 9.5,
+     "RCT": 0.8,
+     "Deployment / implementation": 36.7,
+     "Pediatric": 2.7,
+     "Low-resource / LMIC": 2.2,
+     "Fairness / bias": 14.2
+    }
+   },
+   {
+    "subtopic": "RAG & EHR information extraction",
+    "ai_papers": 2790,
+    "counts": {
+     "External validation": 159,
+     "Prospective": 153,
+     "RCT": 20,
+     "Deployment / implementation": 865,
+     "Pediatric": 102,
+     "Low-resource / LMIC": 62,
+     "Fairness / bias": 264
+    },
+    "pct": {
+     "External validation": 5.7,
+     "Prospective": 5.5,
+     "RCT": 0.7,
+     "Deployment / implementation": 31.0,
+     "Pediatric": 3.7,
+     "Low-resource / LMIC": 2.2,
+     "Fairness / bias": 9.5
+    }
+   },
+   {
+    "subtopic": "Safety, bias & hallucination",
+    "ai_papers": 2209,
+    "counts": {
+     "External validation": 107,
+     "Prospective": 142,
+     "RCT": 25,
+     "Deployment / implementation": 763,
+     "Pediatric": 103,
+     "Low-resource / LMIC": 43,
+     "Fairness / bias": 803
+    },
+    "pct": {
+     "External validation": 4.8,
+     "Prospective": 6.4,
+     "RCT": 1.1,
+     "Deployment / implementation": 34.5,
+     "Pediatric": 4.7,
+     "Low-resource / LMIC": 1.9,
+     "Fairness / bias": 36.4
+    }
+   }
+  ],
+  "overall": {
+   "years": "2022-2026",
+   "total": 21318,
+   "counts": {
+    "External validation": 940,
+    "Prospective": 1126,
+    "RCT": 329,
+    "Deployment / implementation": 4899,
+    "Pediatric": 1080,
+    "Low-resource / LMIC": 408,
+    "Fairness / bias": 2456
+   }
+  }
+ },
+ "markdown": "### Key takeaways\n- Evidence is falling behind output: only 2.5% of 11,628 medical LLM studies were randomized, controlled or prospective, per a [September 2026 analysis](https://arxiv.org/abs/2609.11770).\n- The FDA's generative-AI paper is for [discussion only, not guidance](https://www.maynardnexsen.com/publication-fda-releases-discussion-paper-on-generative-ai-enabled-medical-devices-what-manufacturers-and-investors-need-to-know). Comments closed October 19.\n- About 28% of surveyed leaders have deployed agentic AI, and 72% say agents are sometimes implemented without IT approval ([Healthcare Dive](https://www.healthcaredive.com/news/ama-releases-governance-framework-for-agentic-ai-in-healthcare/833120/)).\n\n### What's new\n- **Aug 18** \u2014 The FDA asked for comments on regulating generative-AI devices, covering risk, premarket review and postmarket monitoring ([FDA](https://content.govdelivery.com/accounts/USFDA/bulletins/424f94a)).\n- **Sep 10** \u2014 A preprint found 62% of LLM randomized trials tested a discontinued model family ([arXiv](https://arxiv.org/abs/2609.11770)).\n- **Sep 11** \u2014 ARPA-H awarded $62.7M to build an autonomous heart-failure agent, with deployment at Kaiser Permanente and Duke ([Healthcare Dive](https://www.healthcaredive.com/news/arpa-h-to-invest-62m-to-build-agentic-ai-agent-for-heart-care/830166/)).\n- **Oct 15** \u2014 The AMA published a governance framework for agents that perform clinical tasks. It says evidence, authority, oversight and accountability must stay aligned ([Healthcare Dive](https://www.healthcaredive.com/news/ama-releases-governance-framework-for-agentic-ai-in-healthcare/833120/)).\n- **Nov 5** \u2014 Mayo Clinic Platform launched an EHR-integrable decision-support chatbot covering 35+ specialties ([Healthcare Dive](https://www.healthcaredive.com/news/mayo-clinic-platform-launches-ai-tool-to-streamline-clinical-decision-makin/873901/)).\n\n### Novel gaps\n1. **Trials that hold up when the model changes.** Evidence: 62% of RCTs tested discontinued models ([arXiv](https://arxiv.org/abs/2609.11770)). Study: platform RCT with pre-set model-swap rules; endpoint: diagnostic accuracy. Funder: PCORI, AHRQ.\n2. **LMIC trials big enough to show patient outcomes.** Evidence: a Kenyan trial of ~10,000 encounters found no outcome benefit; experts estimate ~139,000 people are needed ([NPR](https://www.kpbs.org/news/health/2026/07/23/this-ai-tool-promises-a-second-pair-of-eyes-to-clinicians-did-patients-benefit)). Study: cluster RCT; endpoint: treatment failure. Funder: Gates Foundation.\n3. **Pediatric LLMs tested inside real workflows.** Evidence: none of 40 pediatric studies tested workflow-integrated LLMs ([JAMA Netw Open](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2846946)). Study: stepped-wedge trial in children's hospitals; endpoint: note errors. Funder: NICHD.\n\n### Outlook\nWe dropped agent deployment trials as a gap because ARPA-H's [Advocate program](https://www.healthcaredive.com/news/arpa-h-to-invest-62m-to-build-agentic-ai-agent-for-heart-care/830166/) now funds them; the open questions are evidence that survives model updates, outcome-powered LMIC trials and pediatric evidence.",
+ "chart_spec": null
+}
